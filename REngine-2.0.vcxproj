@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ad6a97d9-dfef-408b-b327-28f4bb7722fa}</ProjectGuid>
+    <RootNamespace>REngine20</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\mazil\Desktop\REngine-2.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\mazil\Desktop\REngine-2.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\mazil\Desktop\REngine-2.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\mazil\Desktop\REngine-2.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\API\Context.cpp" />
+    <ClCompile Include="Application\API\Environment.cpp" />
+    <ClCompile Include="Application\API\Input.cpp" />
+    <ClCompile Include="Application\API\reAPI.cpp" />
+    <ClCompile Include="Application\API\win32\win32API.cpp" />
+    <ClCompile Include="Application\API\Window.cpp" />
+    <ClCompile Include="Application\Application.cpp" />
+    <ClCompile Include="Core\Filesystem.cpp" />
+    <ClCompile Include="Engine\Classes\Camera.cpp" />
+    <ClCompile Include="Engine\Classes\Component.cpp" />
+    <ClCompile Include="Engine\Classes\EmptyWorldObject.cpp" />
+    <ClCompile Include="Engine\Classes\Graphics\IRenderable.cpp" />
+    <ClCompile Include="Engine\Classes\Graphics\Mesh.cpp" />
+    <ClCompile Include="Engine\Classes\Graphics\Sprite.cpp" />
+    <ClCompile Include="Engine\Classes\Object.cpp" />
+    <ClCompile Include="Engine\Classes\SpriteComponent.cpp" />
+    <ClCompile Include="Engine\Classes\Test.cpp" />
+    <ClCompile Include="Engine\Classes\UI\Button.cpp" />
+    <ClCompile Include="Engine\Classes\UI\Panel.cpp" />
+    <ClCompile Include="Engine\Classes\WorldObject.cpp" />
+    <ClCompile Include="Engine\Engine.cpp" />
+    <ClCompile Include="Engine\Structs\Transformation2D.cpp" />
+    <ClCompile Include="Engine\Structs\Vector2D.cpp" />
+    <ClCompile Include="External\Glad\glad.c" />
+    <ClCompile Include="External\Glad\glad_wgl.c" />
+    <ClCompile Include="External\stb_image\stb_image.cpp" />
+    <ClCompile Include="Graphics\Graphics.cpp" />
+    <ClCompile Include="Graphics\Structs\ShaderProgram.cpp" />
+    <ClCompile Include="Graphics\Structs\Texture.cpp" />
+    <ClCompile Include="Graphics\Structs\VertexArray.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Physics\Physics.cpp" />
+    <ClCompile Include="Physics\Structs\CollisionShape2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\API\Context.h" />
+    <ClInclude Include="Application\API\Environment.h" />
+    <ClInclude Include="Application\API\Hints.h" />
+    <ClInclude Include="Application\API\Input.h" />
+    <ClInclude Include="Application\API\Platform.h" />
+    <ClInclude Include="Application\API\reAPI.h" />
+    <ClInclude Include="Application\API\win32\win32API.h" />
+    <ClInclude Include="Application\API\Window.h" />
+    <ClInclude Include="Application\Application.h" />
+    <ClInclude Include="Core\Color.h" />
+    <ClInclude Include="Core\Delegate.h" />
+    <ClInclude Include="Core\Filesystem.h" />
+    <ClInclude Include="Core\Math.h" />
+    <ClInclude Include="Core\StringFunctions.h" />
+    <ClInclude Include="Core\types.h" />
+    <ClInclude Include="DebugLog.h" />
+    <ClInclude Include="EnginePerformance.h" />
+    <ClInclude Include="Engine\Classes\Camera.h" />
+    <ClInclude Include="Engine\Classes\Component.h" />
+    <ClInclude Include="Engine\Classes\EmptyWorldObject.h" />
+    <ClInclude Include="Engine\Classes\Graphics\IRenderable.h" />
+    <ClInclude Include="Engine\Classes\Graphics\Mesh.h" />
+    <ClInclude Include="Engine\Classes\Graphics\Sprite.h" />
+    <ClInclude Include="Engine\Classes\Object.h" />
+    <ClInclude Include="Engine\Classes\SpriteComponent.h" />
+    <ClInclude Include="Engine\Classes\Test.h" />
+    <ClInclude Include="Engine\Classes\UI\Button.h" />
+    <ClInclude Include="Engine\Classes\UI\Panel.h" />
+    <ClInclude Include="Engine\Classes\WorldObject.h" />
+    <ClInclude Include="Engine\Engine.h" />
+    <ClInclude Include="Engine\Structs\Transformation2D.h" />
+    <ClInclude Include="Engine\Structs\Vector2D.h" />
+    <ClInclude Include="Engine\Timer.h" />
+    <ClInclude Include="Engine\World.h" />
+    <ClInclude Include="External\Glad\glad.h" />
+    <ClInclude Include="External\Glad\glad_wgl.h" />
+    <ClInclude Include="External\Glad\KHR\khrplatform.h" />
+    <ClInclude Include="External\stb_image\stb_image.h" />
+    <ClInclude Include="Graphics\Graphics.h" />
+    <ClInclude Include="Graphics\Structs\ShaderProgram.h" />
+    <ClInclude Include="Graphics\Structs\Texture.h" />
+    <ClInclude Include="Graphics\Structs\TextureConfig.h" />
+    <ClInclude Include="Graphics\Structs\VertexArray.h" />
+    <ClInclude Include="Physics\Physics.h" />
+    <ClInclude Include="Physics\Structs\CollisionShape2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shaders\default_fragment.glsl" />
+    <None Include="Resources\Shaders\default_vertex.glsl" />
+    <None Include="Resources\Shaders\text_fragment.glsl" />
+    <None Include="Resources\Shaders\text_vertex.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
