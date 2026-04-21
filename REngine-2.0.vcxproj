@@ -222,6 +222,12 @@
     <None Include="Resources\Shaders\text_fragment.glsl" />
     <None Include="Resources\Shaders\text_vertex.glsl" />
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resources\Fonts\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Textures\square.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

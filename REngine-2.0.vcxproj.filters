@@ -258,4 +258,12 @@
     <None Include="Resources\Shaders\text_fragment.glsl" />
     <None Include="Resources\Shaders\text_vertex.glsl" />
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resources\Fonts\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Textures\square.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
